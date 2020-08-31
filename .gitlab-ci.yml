@@ -1,10 +1,10 @@
 image: alpine:latest
-
-stage: deploy
-script:
-- echo 'zug-zug'
-artifacts:
-  paths:
-  - public
-only:
-- master
+pages:
+  stage: deploy
+  script:
+  - echo 'Nothing to do...'
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
