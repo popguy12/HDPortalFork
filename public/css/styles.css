@@ -44,11 +44,17 @@ footer
 	margin-right: auto;
 }
 
+.content .block
+{
+	background-color: #242523;
+	padding: 5px;
+}
+
 section
 {
 	text-align: justify;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	color: #9ea290;
 	font-size: 16pt;
 }
@@ -65,6 +71,7 @@ section + hr
 
 section h2
 {
+	margin-top: 30px;
 	font-family: "Armata";
 	font-size: 26px;
 	text-align: left;
@@ -230,7 +237,7 @@ section h5 + p
 	LOADOUTS
 */
 
-section .code
+.content section .code
 {
 	display: inline-block;
 	font-family: "Consolas";
@@ -238,14 +245,14 @@ section .code
 	font-size: 80%;
 	font-style: italic;
 	text-align: left;
-	background-color: #212220;
+	background-color: #171816;
 	margin-bottom: 3px;
 }
 
-section .bulk
+.content section .bulk
 {
 	font-family: "Consolas";
 	font-size: 80%;
-	font-style: italic;
+	padding: 1px 5px;
 	text-align: left;
 }
