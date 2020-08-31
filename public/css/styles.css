@@ -59,6 +59,31 @@ section
 	font-size: 16pt;
 }
 
+/* [Ace] Separate paragraphs but don't mess up the spacing outside the paragraph "block" */
+section p + p
+{
+	margin-top: 10px;
+}
+
+section p a
+{
+	text-decoration: none;
+	color: #a9c68b;
+}
+
+section p a:hover
+{
+	color: #c2d3c4;
+	background-color: #65775f;
+	border-bottom: 1px solid #c2d3c4;
+}
+
+section p a:active
+{
+	color: #c2d3c4;
+	background-color: #94a989;
+}
+
 section img
 {
 	max-height: 25px;
@@ -90,15 +115,24 @@ section h5
 	text-align: left;
 	color: #9ea290;
 	font-style: italic;
-	margin-bottom: 10px;
+	margin-bottom: 2px;
 }
 
-section h5 + p
+section h6
+{
+	text-align: left;
+	color: #6cbe6a;
+	font-style: italic;
+	margin: 10px 0px;
+	letter-spacing: 1px;
+}
+
+section .description
 {
 	text-align: left;
 	font-size: 90%;
 	font-style: italic;
-	margin-bottom: 10px;
+	margin: 10px 0px;
 }
 
 /*
