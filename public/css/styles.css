@@ -47,14 +47,13 @@ footer
 .content .block
 {
 	background-color: #242523;
-	padding: 5px;
+	padding: 10px;
 }
 
 section
 {
 	text-align: justify;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 20px 0px;
 	color: #9ea290;
 	font-size: 16pt;
 }
@@ -86,6 +85,7 @@ section p a:active
 
 section img
 {
+	margin-top: 10px;
 	max-height: 25px;
 }
 
@@ -115,15 +115,22 @@ section h5
 	text-align: left;
 	color: #9ea290;
 	font-style: italic;
-	margin-bottom: 2px;
+	margin-bottom: 10px;
 }
 
-section h6
+section .multiplayer
 {
 	text-align: left;
 	color: #6cbe6a;
-	font-style: italic;
-	margin: 10px 0px;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+section .requirement
+{
+	text-align: left;
+	color: #beac6a;
+	font-size: 16px;
 	letter-spacing: 1px;
 }
 
@@ -132,7 +139,7 @@ section .description
 	text-align: left;
 	font-size: 90%;
 	font-style: italic;
-	margin: 10px 0px;
+	margin: 5px 0px;
 }
 
 /*
@@ -211,6 +218,7 @@ section .description
 	padding-top: 5px;
 	padding-left: 12px;
 	padding-right: 8px;
+	margin-bottom: 5px;
 	color: #909679;
 }
 
@@ -251,7 +259,7 @@ section .description
 
 .introduction
 {
-	width: 50%;
+	width: 70%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
