@@ -36,20 +36,6 @@ footer
 	color: #a9c68b;
 }
 
-.content
-{
-	width: 70%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.content .block
-{
-	background-color: #242523;
-	padding: 10px;
-}
-
 section
 {
 	text-align: justify;
@@ -83,7 +69,18 @@ section p a:active
 	background-color: #94a989;
 }
 
-section img
+section .mapinfo
+{
+	display: flex;
+}
+
+section .mapinfo img
+{
+	max-width: 200px;
+	margin-right: 40px;
+}
+
+section .download
 {
 	margin-top: 10px;
 	max-height: 25px;
@@ -116,6 +113,14 @@ section h5
 	color: #9ea290;
 	font-style: italic;
 	margin-bottom: 10px;
+}
+
+section .highlight
+{
+	text-align: left;
+	color: #6aa9be;
+	font-size: 16px;
+	letter-spacing: 1px;
 }
 
 section .multiplayer
@@ -276,12 +281,44 @@ section .description
 }
 
 /*
-	LOADOUTS
+	CONTENT STUFF
 */
+
+.content
+{
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content .block
+{
+	background-color: #242523;
+	padding: 10px;
+}
+
+.content .mapblock
+{
+	background-color: #242523;
+	padding: 10px;
+	display: flex;
+}
+
+.content .mapblock img
+{
+	max-width: 200px;
+	margin-right: 10px;
+}
+
+.content .mapblock .mapinfo
+{
+	display: initial;
+}
 
 .content section .code
 {
-	display: inline-block;
+	display: inline;
 	font-family: "Consolas";
 	padding: 1px 5px;
 	font-size: 80%;
