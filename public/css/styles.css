@@ -16,7 +16,7 @@ body
 	background-color: #2c2d2a;
 	position: relative;
 	min-height: 100vh;
-	padding-bottom: 40px;
+	padding: 40px 0px;
 }
 
 .titlepic
@@ -76,23 +76,6 @@ section p a:active
 	background-color: #94a989;
 }
 
-section .mapinfo
-{
-	display: flex;
-}
-
-section .mapinfo img
-{
-	max-width: 200px;
-	margin-right: 40px;
-}
-
-section .download
-{
-	margin-top: 10px;
-	max-height: 25px;
-}
-
 section + hr
 {
 	width: 33%;
@@ -122,38 +105,6 @@ section h5
 	margin-bottom: 10px;
 }
 
-section .highlight
-{
-	text-align: left;
-	color: #6aa9be;
-	font-size: 16px;
-	letter-spacing: 1px;
-}
-
-section .multiplayer
-{
-	text-align: left;
-	color: #6cbe6a;
-	font-size: 16px;
-	letter-spacing: 1px;
-}
-
-section .requirement
-{
-	text-align: left;
-	color: #beac6a;
-	font-size: 16px;
-	letter-spacing: 1px;
-}
-
-section .description
-{
-	text-align: left;
-	font-size: 90%;
-	font-style: italic;
-	margin: 5px 0px;
-}
-
 /*
 	NAVIGATION
 	[Ace] Christ, this took forever to get right.
@@ -161,6 +112,9 @@ section .description
 
 .navbar
 {
+	z-index: 50;
+	position: fixed;
+	top: 0px;
 	width: 100%;
 	background-color: #474e3b;
 	font-size: 18pt;
@@ -215,6 +169,7 @@ section .description
 
 .sidebar
 {
+	z-index: 10;
 	position: fixed;
 	top: 20%;
 	max-width: 14%;
@@ -312,15 +267,27 @@ section .description
 	display: flex;
 }
 
-.content .mapblock img
+.content .mapblock .preview
 {
+	margin: auto 0px;
 	max-width: 200px;
+	max-height: 200px;
 	margin-right: 10px;
 }
 
 .content .mapblock .mapinfo
 {
 	display: initial;
+	border-left: 2px solid #9ea290;
+	padding-left: 10px;
+}
+
+.content .mapblock .mapinfo .recommended
+{
+	text-align: left;
+	color: #6aa9be;
+	font-size: 16px;
+	letter-spacing: 1px;
 }
 
 .content section .code
@@ -341,4 +308,34 @@ section .description
 	font-size: 80%;
 	padding: 1px 5px;
 	text-align: left;
+}
+
+.content section .download
+{
+	margin-top: 10px;
+	max-height: 25px;
+}
+
+.content section .multiplayer
+{
+	text-align: left;
+	color: #6cbe6a;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.content section .requirement
+{
+	text-align: left;
+	color: #beac6a;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.content section .description
+{
+	text-align: left;
+	font-size: 90%;
+	font-style: italic;
+	margin: 5px 0px;
 }
