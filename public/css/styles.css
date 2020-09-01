@@ -127,7 +127,7 @@ section h5
 	font-size: 22pt;
 	font-variant: small-caps;
 	padding-left: 10px;
-	color: #909679;
+	color: #a8af8e;
 }
 
 .navbar ul
@@ -263,6 +263,14 @@ section h5
 	padding: 10px;
 }
 
+.content .about ol
+{
+	font-style: italic;
+	font-size: 80%;
+	margin-top: 5px;
+	padding-left: 40px;
+}
+
 .content .mapblock
 {
 	background-color: #242523;
@@ -272,6 +280,7 @@ section h5
 
 .content .mapblock .preview
 {
+	flex: 0 0 auto;
 	margin: auto 0px;
 	max-width: 200px;
 	max-height: 200px;
