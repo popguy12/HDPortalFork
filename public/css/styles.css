@@ -18,13 +18,6 @@ body
 	min-height: 100vh;
 }
 
-.titlepic
-{
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
-}
-
 hr
 {
 	border-color: rgba(199, 219, 138, 0.2);
@@ -82,7 +75,7 @@ section + hr
 
 section h2
 {
-	margin-top: 30px;
+	padding-top: 30px;
 	font-family: "Armata";
 	font-size: 26px;
 	text-align: left;
@@ -109,7 +102,7 @@ section h5
 	[Ace] Christ, this took forever to get right.
 */
 
-.navbar
+header
 {
 	z-index: 50;
 	position: fixed;
@@ -121,7 +114,7 @@ section h5
 	overflow: hidden;
 }
 
-.navbar h1
+header h1
 {
 	float: left;
 	font-size: 22pt;
@@ -130,7 +123,7 @@ section h5
 	color: #a8af8e;
 }
 
-.navbar ul
+header ul
 {
 	float: right;
 	list-style: none;
@@ -139,7 +132,7 @@ section h5
 	flex-wrap: wrap-reverse;
 }
 
-.navbar ul li a
+header ul li a
 {
 	float: right;
 	text-align: center;
@@ -148,7 +141,7 @@ section h5
 	color: #a9c68b;
 }
 
-.navbar ul li a:hover
+header ul li a:hover
 {
 	padding: 4px 16px 4px 16px;
 	color: #c2d3c4;
@@ -156,7 +149,7 @@ section h5
 	border-bottom: 2px solid #c2d3c4;
 }
 
-.navbar ul li a:active
+header ul li a:active
 {
 	padding: 4px 16px 4px 16px;
 	color: #c2d3c4;
@@ -174,7 +167,6 @@ section h5
 	top: 20%;
 	max-width: 14%;
 	background-color: #474e3b;
-	opacity: 80%;
 	overflow: hidden;
 }
 
@@ -225,6 +217,13 @@ section h5
 	LANDING PAGE
 */
 
+.titlepic
+{
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
 .introduction
 {
 	width: 60%;
@@ -238,7 +237,30 @@ section h5
 	text-align: center;
 }
 
-.introduction section h3
+.introduction section h5
+{
+	text-align: center;
+}
+
+/*
+	TIPS & TRICKS
+*/
+
+.tips
+{
+	width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tips section h2
+{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.tips section h3
 {
 	text-align: center;
 }
@@ -306,6 +328,14 @@ section h5
 {
 	text-align: left;
 	color: #6aa9be;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.content .mapblock .mapinfo .missinginfo
+{
+	text-align: left;
+	color: #eb5252;
 	font-size: 16px;
 	letter-spacing: 1px;
 }
