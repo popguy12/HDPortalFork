@@ -1,6 +1,7 @@
 /*
 	GLOBAL
 */
+
 *
 {
 	font-family: "Abel";
@@ -42,58 +43,75 @@ section
 	font-size: 16pt;
 }
 
-/* [Ace] Separate paragraphs but don't mess up the spacing outside the paragraph "block" */
-section p + p
+ul
 {
-	margin-top: 10px;
+	list-style-position: inside;
+	margin-bottom: 15px;
 }
 
-section p a
+/* [Ace] Separate paragraphs but don't mess up the spacing outside the paragraph "block" */
+p
+{
+	margin-bottom: 15px;
+}
+
+p a
 {
 	text-decoration: none;
 	color: #a9c68b;
 }
 
-section p a:hover
+p a:hover
 {
 	color: #c2d3c4;
 	background-color: #65775f;
 	border-bottom: 1px solid #c2d3c4;
 }
 
-section p a:active
+p a:active
 {
 	color: #c2d3c4;
 	background-color: #94a989;
 }
 
-section + hr
+h2
 {
-	width: 33%;
-}
-
-section h2
-{
-	padding-top: 30px;
+	padding-top: 20px;
 	font-family: "Armata";
 	font-size: 26px;
 	text-align: left;
 	color: #a9c68b;
 }
 
-section h3
+h3
 {
 	text-align: left;
 	color: #9ea290;
 	letter-spacing: 2px;
 }
 
-section h5
+h5
 {
 	text-align: left;
 	color: #9ea290;
 	font-style: italic;
 	margin-bottom: 10px;
+}
+
+table caption
+{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+table td
+{
+	padding: 2px;
+}
+
+table th
+{
+	font-size: 80%;
 }
 
 /*
@@ -275,7 +293,8 @@ header ul li a:active
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 40px 0px;
+	padding-top: 40px;
+	padding-bottom: 80px;
 }
 
 .content .anchor:before
@@ -286,15 +305,15 @@ header ul li a:active
 	margin: -30px 0 0;
 }
 
-.content .about ol
+.content .about ol, p ~ ul
 {
 	font-style: italic;
-	font-size: 80%;
+	font-size: 90%;
 	margin-top: 5px;
-	padding-left: 40px;
+	padding-left: 30px;
 }
 
-.content .block
+.content .block, .content .mapblock
 {
 	background-color: #242523;
 	padding: 10px;
@@ -304,9 +323,6 @@ header ul li a:active
 .content .mapblock
 {
 	display: flex;
-	background-color: #242523;
-	padding: 10px;
-	margin: 20px 0px;
 }
 
 .content .mapblock .preview
@@ -340,6 +356,45 @@ header ul li a:active
 	letter-spacing: 1px;
 }
 
+/*
+	[Ace] Container tables are used to hold other tables. On their own they serve no purpose.
+	This is a galaxybrain hack(?) because I could not get multiple tables to align "inline" properly. Using Flex didn't work because it messed up the text when resized.
+*/
+.content .container-table
+{
+	margin: 10px auto;
+}
+
+.content .container-table tr
+{
+	vertical-align: top;
+}
+
+.content .data-table
+{
+	margin: 10px auto;
+	line-height: 90%;
+	border: 2px solid #454a38;
+	background-color: #242523;
+}
+
+.content #dirt-table
+{
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.content #dirt-table td
+{
+	padding: 1px 10px;
+	border: 2px solid #454a38;
+}
+
+.content #dirt-table tr td
+{
+	margin: 10px;
+}
+
 .content section .code
 {
 	display: inline;
@@ -356,7 +411,7 @@ header ul li a:active
 {
 	font-family: "Consolas";
 	font-size: 80%;
-	color: #bdc487;
+	color: #c9c182;
 	padding: 3px 5px 0px 5px;
 	text-align: left;
 }

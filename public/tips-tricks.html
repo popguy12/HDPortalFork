@@ -11,7 +11,7 @@
 	<header>
 		<h1>Hideous Destructor HQ</h1>
 		<ul>
-			<li><a href="hdmodding.html">HD MODDING</a></li>
+			<!-- <li><a href="hdmodding.html">HD MODDING</a></li> -->
 			<li><a href="loadouts.html">LOADOUTS</a></li>
 			<li><a href="maps.html">MAPS</a></li>
 			<li><a href="addons.html">ADDONS</a></li>
@@ -24,16 +24,29 @@
 		<ul>
 			<li><a href="#introduction">Introduction</a></li>
 			<li><a href="#fire">Fire</a></li>
-			<li><a href="#berserk">Berserk a.k.a. Zerk</a></li>
+			<li><a href="#jams">Jamming</a></li>
+			<li><a href="#incapacitation">Incapacitation</a></li>
+			<li><a href="#resurrection">Enemy Resurrection</a></li>
+			<li><a href="#enc">Encumbrance</a></li>
+			<li><a href="#enc-advanced">Encumbrance (Advanced)</a></li>
+			<li><a href="#stims">Stimpacks</a></li>
+			<li><a href="#berserk">Berserk</a></li>
+			<li><a href="#crits-armor">Crits & Armor</a></li>
+			<li><a href="#humans">Human Enemies</a></li>
+			<li><a href="#shields">Shields</a></li>
+			<li><a href="#doorbusting">Doorbusting</a></li>
+			<li><a href="#penetration">Penetration</a></li>
+			<li><a href="#boss-handling">Boss Handling</a></li>
+			<li><a href="#boss-dirt">Boss Dirt</a></li>
 		</ul>
 	</div>
-	<div class="tips">
-		<section>
+	<div class="content">
+		<section class="anchor">
 			<h2>Important</h2>
 			<hr/>
-			<p>This page contains lore-unfriendly info that is only really visible from code-diving. Not particularly good for immersion, so read at your own risk!</p>
+			<p>This page contains lore-unfriendly info that is only really visible from code-diving. Not particularly good for immersion, so read at your own risk! Some information may also be slightly outdated, but for the most part it is up-to-date.</p>
 		</section>
-		<section id="introduction">
+		<section class="anchor" id="introduction">
 			<h2>New to HD?</h2>
 			<hr/>
 			<ul>
@@ -48,10 +61,323 @@
 				<li>Bind Fire Mode, Secondary Reload, and Unload. Don't forget the mag manager, it will be your best friend.</li>
 			</ul>
 		</section>
-		<section id="fire">
+		<section class="anchor" id="fire">
 			<h2>Getting rid of fire</h2>
+			<h5>by Sledge</h5>
 			<hr/>
-			<p>If you're on fire, stop, drop, and roll! (Waggle your mouse around like a madman, or spin in circles!) Consider binding a key to turn180 for this.</p>
+			<p>If you're on fire, stop, drop, and roll! (Waggle your mouse around like a madman, or spin in circles!) Consider binding a key to turn180 for this. [There is a cap on how much mouse movement affects fire.]</p>
+		</section>
+		<section class="anchor" id="jams">
+			<h2>Weapon jamming</h2>
+			<h5>by Sledge</h5>
+			<hr/>
+			<p>Your ZM66, Hunter shotgun, and Boss rifle can jam. For the ZM66, you'll need to remove the magazine (Unload or Reload), clear the jam (Press/hold Reload until the jam clears), and then insert a new mag before you can fire again. For the Hunter and Boss, cycle the action (The Boss might take a bit more elbow grease, so hold down that altfire) and you're clear to fire again.</p>
+		</section>
+		<section class="anchor" id="incapacitation">
+			<h2>Incapacitation</h2>
+			<h5>by Caligari87</h5>
+			<hr/>
+			<p>Incapacitation ("incap") was introduced in 424a and it happens if you managed to down the enemy, but haven't yet actually killed them, mainly only happens on humanoid enemies. This kind of stuff happens to you too, so it's a you-can-do-they-can-do sort of thing. Double tap and make sure the thing you just shot is dead. If it's still slightly moving, you can walk on top of them, or they haven't yet dropped their stuff, they're still alive.</p>
+		</section>
+		<section class="anchor" id="resurrection">
+			<h2>Enemy Resurrection</h2>
+			<h5>by ZikShadow</h5>
+			<hr/>
+			<p>There's a few ways a fallen enemy could get [resurrected]: Frag energy, healer imps, and archviles + curses.</p>
+			<h3>1. Frag</h3>
+			<p>Long name: Gretchenfrage. Those small green energy thingies you see flying around the map. Spawns from various demonic enemies in one way or another. Unless you're playing on the hardest difficulty, Frag doesn't respawn, it eventually runs out. Frag energy goes inside enemies, which then revives them. You can gib the bodies of mid to low tier enemies with the chainsaw or with enough firepower (no gibbing cacos above, pretty much), but it only really serves to slow down and make the Frag energy go to waste, they'll still be able to get back up if enough energy is put into them. If you drink/absorb things like blue potion/soul or megaspheres, you'll slowly emit friendly frag energy that might resurrect enemies on your favor, so it's not all bad.</p>
+			<h3>2. Healer Imps</h3>
+			<p>Healer imps are usually the smallest variants. As their name indicates, they resurrect fallen foes. Killing (and gibbing) them before anyone else might help keeping the fight in your favor.</p>
+			<h3>3. Archviles</h3>
+			<p>Archviles pick whole rooms back up, that's their strongest attack, really. If you managed to hurt them enough times to kill them (you'll know this happens when they burst into a confetti of yellow energy), they'll send a last hurrah in the form of a curse that'll randomly resurrect enemies around you a bunch of times until it dissipate, you'll know when it happens once you hear a distant laugh.</p>
+		</section>
+		<section class="anchor" id="enc">
+			<h2>Encumbrance</h2>
+			<h5>by HexaDoken</h5>
+			<hr/>
+			<p>There are three base values governing encumbrance. These are: the pocket space limit, the weapon pickup limit, and the "carry maximum". All of these three values are divided by the hd_encumbrance setting.</p>
+			<p>Both pocket space and weapon pickup limits are hard binary limits; you either hit them or you don't.</p>
+			<p>Pocket space limit is 600 blocks. Pocket items is all ammo not loaded into the weapons, and all usable inventory except HERP and the backpack. The encumbrance from pocket items counts towards the pocket limit. Once you reach the pocket limit, you can't pick up more pocket items.</p>
+			<p>Weapon pickup limit is 2000 blocks. Once your total encumbrance exceeds this limit, you will not be able to pick up additional weapons.</p>
+			<p>Carry maximum is not a hard limit, and can be breached. However, once you do so, you will begin to take penalties.</p>
+			<p>
+				The base carry maximum is 400 blocks, but can be boosted by the following effects:
+				<ul>
+					<li>A full stim dose gives +40 blocks. This bonus scales with how much of the stim dose remains in your body. You can have more than +40 blocks, but over 125% of the stim dose you are overdosed and take damage.</li>
+					<li>Any amount of zerk gives +100 blocks. This bonus does not scale with how much zerk is left, and can technically be used to determine when you're out of zerk.</li>
+					<li>Blues will give up to +150 blocks. If you have less than 150 points of blue, the bonus scales down. One potion is 144 blue, one sphere is 777 blue.</li>
+				</ul>
+			</p>
+			<p>The breakpoints for changing the colour of the encumbrance indicator are as following: <120% of carrymax is green, 120-200% of carrymax is yellow, and >200% carrymax is red.</p>
+			<p>Below 100% carrymax, you only take extremely minor movespeed penalty(0.02% speed loss per 1% of carrymax).</p>
+			<p>If you are above 100% carrymax, your jump power is divided by carry percentage. So you jump at half strength if you're at 200% carrymax. Your jump strength is also your hop strength.</p>
+			<p>Above 100% carrymax, you take a penalty to your maximum speed. Whether this has an immediate effect on you actually depends on some factors.</p>
+			<p>Being over 100% carrymax caps your speed at 400% minus carry percentage, so 300% base speed and below. Normally, you will not immediately notice this difference, because of two factors:</p>
+			<p>The first is that sprinting only puts you at 280% speed(180% on Grimdark and Spooky), which means you can't even reach the cap immediately anyway. This is why the indicator goes yellow at 120% carrymax - at this point you're actually losing sprint speed.</p>
+			<p>However, your speed can be boosted by berserk. Zerk sprinting puts you at 420% base speed(270% on Grimdark and Spooky). Here, however, you will probably bump into another limit:</p>
+			<p>There is another speed cap imposed by wearing armour. Blue armour caps speed to 200%, green armour caps speed to 300%, and radsuit caps speed to 180% regardless of armour.</p>
+			<p>
+				The only time you should STRICTLY care about being under 100% carrymax is if you are:
+				<ul>
+					<li>Unarmoured</li>
+					<li>Berserk-sprinting</li>
+					<li>Not playing on Grimdark or Spooky.</li>
+				</ul>
+			</p>
+			<p>Needless to say, not exactly a common situation. However, should you somehow find yourself in it, you will notice a SIGNIFICANT difference in speed at 99% carrymax and 100% carrymax. If, for some reason, you need to go stupefyingly fast, ditch your armour and your equipment.</p>
+			<p>In addition, blue armour wearers do not take an effective speed penalty until they are over 200% carrymax, though they do still take a jump power penalty. Grimdark and Spoky players likewise do not take a sprint speed penalty until they are over 220% carrymax, OR berserking.</p>
+			<p>Sidenote: while in the past there have been some cases where some items did not count towards your effective encumberance, those are pretty much entirely gone with the removal of one man army mode. Everything you have just counts.</p>
+			<p>The only exception that remains is that your selected weapon does not count towards the weapon stacking multiplier. This means that if you have more than one gun, having the heavier one in your hand will make you have slightly less encumberance than if you had the ligher one in your hands. However, the BASE encumberance of the weapon does not go anywhere, and the disparity from weapon stacks is going to be very minor compared to your total encumberance. As such, this isn't really worth concerning yourself about.</p>
+		</section>
+		<section class="anchor" id="enc-advanced">
+			<h2>Encumbrance (Advanced)</h2>
+			<h5>by HexaDoken</h5>
+			<hr/>
+			<p>Backpack fits up to 1000 blocks of junk AND reduces the encumberance of everything in it by 40%, but also itself adds 100 blocks. A backpack with 1000 blocks in it encumbers you by 700 blocks. A backpack with 250 blocks in it encumbers you with 250 blocks. If you put less than 250 blocks of junk in a backpack, it makes you more encumbered than you would be by ditching the backpack and carrying stuff normally.</p>
+			<p>Armour has 10% normal encumbrance when worn.</p>
+			<p>Values below assume you carry nothing else. Margin of error for everything ±1 block.</p>
+			<table class="container-table">
+				<tr>
+				<td>
+					<table class="data-table">
+						<caption>Weapon Bulk</caption>
+						<tr><td width="140px">Chinasaw</td><td>100/107</td></tr>
+						<tr><td width="140px">Pistol</td><td>30/37</td></tr>
+						<tr><td width="140px">Revolver</td><td>32/34</td></tr>
+						<tr><td width="140px">SMG</td><td>90/123</td></tr>
+						<tr><td width="140px">Slayer</td><td>100/107</td></tr>
+						<tr><td width="140px">Hunter</td><td>125/136</td></tr>
+						<tr><td width="140px">ZM66</td><td>90/101</td></tr>
+						<tr><td width="140px">ZM66 GL</td><td>115/134</td></tr>
+						<tr><td width="140px">Vulcanette</td><td>200/268</td></tr>
+						<tr><td width="140px">Blooper</td><td>60/67</td></tr>
+						<tr><td width="140px">Launcher</td><td>175/218 (+1 if HEAT)</td></tr>
+						<tr><td width="140px">Thunderbuster</td><td>175/182</td></tr>
+						<tr><td width="140px">Liberator</td><td>100/131 (+20; No bullpup)</td></tr>
+						<tr><td width="140px">Liberator GL</td><td>125/163 (+20; No bullpup)</td></tr>
+						<tr><td width="140px">BFG9000</td><td>240/247</td></tr>
+						<tr><td width="140px">Brontornis</td><td>75/77</td></tr>
+						<tr><td width="140px">Boss</td><td>144/151</td></tr>
+					</table>
+				</td>
+				<td>
+					<table class="data-table">
+						<caption>Ammo Bulk</caption>
+						<tr><td width="140px">Loose .355</td><td>0.78</td></tr>
+						<tr><td width="140px">Loose 9mm</td><td>0.65</td></tr>
+						<tr><td width="140px">Pistol mag</td><td>3/10</td></tr>
+						<tr><td width="140px">SMG mag</td><td>7/21</td></tr>
+						<tr><td width="140px">Loose 4mm</td><td>0.26</td></tr>
+						<tr><td width="140px">ZM mag</td><td>6/16</td></tr>
+						<tr><td width="140px">Loose 7mm</td><td>1.26</td></tr>
+						<tr><td width="140px">7mm brass</td><td>0.38</td></tr>
+						<tr><td width="140px">Lib mag</td><td>21/42</td></tr>
+						<tr><td width="140px">Boss clip</td><td>0.37/12.9</td></tr>
+						<tr><td width="140px">Shell</td><td>1.8</td></tr>
+						<tr><td width="140px">Bronto round</td><td>6.4</td></tr>
+						<tr><td width="140px">Rocket</td><td>14.4</td></tr>
+						<tr><td width="140px">HEAT</td><td>17.2</td></tr>
+						<tr><td width="140px">Battery</td><td>18</td></tr>
+						<tr><td width="140px">Frag</td><td>23</td></tr>
+					</table>
+				</td>
+				<td>
+					<table class="data-table">
+						<caption>Item Bulk</caption>
+						<tr><td width="140px">Stimpack</td><td>7</td></tr>
+						<tr><td width="140px">Medikit</td><td>45</td></tr>
+						<tr><td width="140px">Berserk</td><td>7 per use</td></tr>
+						<tr><td width="140px">Potion</td><td>8.4/14.1</td></tr>
+						<tr><td width="140px">IED kit</td><td>3</td></tr>
+						<tr><td width="140px">DERP</td><td>55</td></tr>
+						<tr><td width="140px">HERP</td><td>125/162</td></tr>
+						<tr><td width="140px">Doorbuster</td><td>17.2</td></tr>
+						<tr><td width="140px">Ladder</td><td>70</td></tr>
+						<tr><td width="140px">Green armour</td><td>360</td></tr>
+						<tr><td width="140px">Blue armour</td><td>700</td></tr>
+						<tr><td width="140px">Blood pack</td><td>7</td></tr>
+						<tr><td width="140px">Radsuit</td><td>50</td></tr>
+						<tr><td width="140px">Goggles</td><td>20</td></tr>
+						<tr><td width="140px">Talisman</td><td>7</td></tr>
+						<tr><td width="140px">Auto-reloader</td><td>20</td></tr>
+						<tr><td width="140px">Blursphere</td><td>Precious</td></tr>
+					</table>
+				</td>
+				</tr>
+			</table>
+		</section>
+		<section class="anchor" id="stims">
+			<h2>Stimpacks</h2>
+			<h5>by Sledge & Accensus</h5>
+			<hr/>
+			<p>Stimpacks give a small boost to health when injected and increase health regeneration temporarily. Should you inject more than one at a time, you will overdose and die.</p>
+			<p>At absolute bare minimum, you should wait 90 seconds before injecting another stim into yourself after the first. You should be absolutely safe if you wait for 2 minutes, regardless of heart rate and injury.</p>
+		</section>
+		<section class="anchor" id="berserk">
+			<h2>Berserk a.k.a. Zerk</h2>
+			<h5>by Sledge</h5>
+			<hr/>
+			<p>A single dose of zerk gives 4100 zerk. If you're over 4000, you have a chance of randomly tossing your weapon to the ground (Yep, that's what does it.) That wears off pretty quick from a single dose. Throughout the course of the zerk, you'll have an inhuman amount of mobility, health regeneration, and punching/throwing strength. You will also randomly throw your weapons pretty frequently, so be careful around ledges or with sensitive equipment.</p>
+			<p>If you're over 5000, however, you'll just start violently haemmoraging and bleed even faster than zerk can heal you. This isn't just some bleeding you can staple shut. You'll keep sprouting new holes until it goes back below 5000, and if you manage to survive this, you will have an insane amount of aggravated damage to deal with afterwards, so, don't do that. </p>
+			<p>However, timing is key. You'll notice that you randomly shoot your weapon, throw a punch, or just toss your entire gun while zerked. When you stop doing that, you have about 25% of a zerk dose left in your system, at which point it's "safe" although not advisable to potentially dose again without bleeding.</p>
+			<p>Unfortunately, that's something that happens randomly to begin with so it's not really a safe or reliable metric. There is no safe or reliable metric to tell how much berserk is left in your system.</p>
+			<p>Once your zerk hits 0, it suddenly "takes" a huge amount of zerk from you, depending on how many zerks you've used without letting it wear out.</p>
+			<p>When you're at negative zerk, it ticks upwards in the same way zerk ticks downwards normally. Every time it ticks upwards, it rolls a number for your heart rate, and if it's over a certain number, you start suffering rapid damage</p>
+			<p>That is completely RNG and there's nothing you can do outside of supernatural healing to mitigate it. Just find a safe place to sit and don't do anything strenuous like running or jumping.</p>
+			<p>Dosing again while you're in your recovery withdrawal actually does influence how much zerk will be in your system. If you dose immediately after hitting withdrawal, your berzerk will be about 20% shorter, which also means (happily) that you won't risk dropping your weapon or bleeding through every hole in your body.</p>
+			<p>It'll be a bit shorter, but there's no drawbacks besides putting yourself back in the zerk hole.</p>
+		</section>
+		<section class="anchor" id="crits-armor">
+			<h2>Crits & Armor</h2>
+			<h5>by Sledge</h5>
+			<hr/>
+			<p>Shot placement matters! Hitting someone in the central column or, better yet, the head, tends to do more damage than grazing them on the side. Some enemies (Helmet jackboots, hostile marines, chaingunners, and nazis) often wear armored vests. Their head and legs are less-well protected, but even hitting them in the vest will stagger them briefly. Either carry a heavy gun, or place your shots carefully!</p>
+			<p>Even your fist is able to score a headshot, which will disorient anything you hit, even through a shield. Yes, including cyberdemons.</p>
+		</section>
+		<section class="anchor" id="humans">
+			<h2>Human Enemies</h2>
+			<h5>by Caligari87</h5>
+			<hr/>
+			<h3>Zombie Stormtrooper</h3>
+			<p>Slow-moving, dumb, inaccurate.</p>
+			<ul>
+				<li>Standard zombie, ZM66 (full-auto, burst)</li>
+				<li>Standard zombie, ZM66 (semi-only)</li>
+				<li>Standard zombie, SMG</li>
+				<li>Shellshade (ghost zombie, hard to kill)</li>
+				<li>Pistol zombie (Freedoom only)</li>
+			</ul>
+			<h3>Jackboot</h3>
+			<p>Fast-moving and aggressive, fast-aiming and slightly more accurate but not by much. Dangerous in melee.</p>
+			<ul>
+				<li>Red/black zombie, Pump Shotgun</li>
+				<li>Red/black zombie, Slayer</li>
+				<li>Black helmet marine, ZM66 (burst)</li>
+			</ul>
+			<h3>Marine</h3>
+			<p>Fast moving and aggressive, slow aiming but highly accurate. Extremely deadly in melee.</p>
+			<ul>
+				<li>Green helmet marine, ZM66 (all modes) with underbarrel grenade launcher, pistol</li>
+				<li>Blue helmet marine, Shotgun, "blooper" grenade launcher, pistol</li>
+				<li>Grey helmet marine, SMG, grenade launcher, pistol</li>
+				<li>Brown helmet marine, Rocket launcher, pistol</li>
+			</ul>
+		</section>
+		<section class="anchor" id="shields">
+			<h2>Shields</h2>
+			<h5>by Eric</h5>
+			<hr/>
+			<p>Shields completely block most forms of damage until they are depleted. They constantly regenerate one point per tic (35 per second). Fire is one of the few exceptions which can inflict damage through shields, but Hell Knights, Mancubi, Barons, and Masterminds cannot be killed by fire alone, no matter how hot they burn. Their shield must be broken first, but the fire will quickly finish its work after that.</p>
+			<p>While bullet damage calculations against health are heavily randomized, shield damage is almost completely static. Outside of a couple instances of differing muzzle velocities, deviations only occur in melee, explosive, and energy attacks.</p>
+			<table class="container-table">
+				<tr>
+				<td>
+					<table class="data-table">
+						<caption>Shield Health</caption>
+						<tr><td width="180px">Ninja Pirate</td><td>120</td></tr>
+						<tr><td width="180px">Hell Knight</td><td>500</td></tr>
+						<tr><td width="180px">Arachnotron</td><td>500</td></tr>
+						<tr><td width="180px">Mancubus</td><td>500</td></tr>
+						<tr><td width="180px">Shellshade</td><td>666</td></tr>
+						<tr><td width="180px">Pain Elemental</td><td>1000</td></tr>
+						<tr><td width="180px">Baron of Hell</td><td>2000</td></tr>
+						<tr><td width="180px">Spider Mastermind</td><td>8000</td></tr>
+						<tr><td width="180px">Cyberdemon</td><td>8000</td></tr>
+					</table>
+				</td>
+				<td>
+					<table class="data-table">
+						<caption>Shield Damage</caption>
+						<tr><td width="160px">Punch</td><td>Equal to normal inflicted damage.</td></tr>
+						<tr><td width="160px">Chainsaw</td><td>Same, but inflicts wounds through the shield.</td></tr>
+						<tr><td width="160px">4.26 Round</td><td>44</td></tr>
+						<tr><td width="160px">12ga Shell</td><td>16 per pellet (10 pellets per shell)</td></tr>
+						<tr><td width="160px">9mm Round</td><td>96-97 (98 from SMG)</td></tr>
+						<tr><td width="160px">.355 Round</td><td>161</td></tr>
+						<tr><td width="160px">7.76 Round</td><td>447 (454 from stock Boss, 446 from custom chamber)</td></tr>
+						<tr><td width="160px">Rocquette</td><td>~2000</td></tr>
+						<tr><td width="160px">HEAT</td><td>~2000, but also inflicts piercing damage through unbroken shield.</td></tr>
+						<tr><td width="160px">TB Spray</td><td>200-400?</td></tr>
+						<tr><td width="160px">TB Beam</td><td>~40?</td></tr>
+						<tr><td width="160px">TB Boom</td><td>~2000</td></tr>
+						<tr><td width="160px">Brontornis Bolt</td><td>142932</td></tr>
+						<tr><td width="160px">BFG Ball</td><td>>8000</td></tr>
+						<tr><td width="160px">BFG Tracer</td><td>196-320?</td></tr>
+					</table>
+				</td>
+				</tr>
+			</table>
+			<p>Chainsaw causes wounds straight through a shield, which can kill bleeding enemies incredibly quickly but will have no special effect on Arachnotrons or bosses. Explosive weapons have somewhat variable shield damage due to shrapnel. The energy weapon numbers are very loose estimates or outright guesses based on code. More specific numbers from more code-savvy people than myself would be great.</p>
+		</section>
+		<section class="anchor" id="doorbusting">
+			<h2>Doorbusting</h2>
+			<h5>by Sledge</h5>
+			<hr/>
+			<p>Most of your arsenal is capable of destroying geometry in the map, for example, doors, small cover, and things that act like them, including monster closet trap walls. You cannot break anything that leads off the edge of the map!</p>
+			<p>Obviously, some things are better than others, or are designed to do this, like the doorbuster, but there are very few problems that cannot be solved with excessive firepower. Simply shooting a door with enough bullets can break it eventually. You can even use your boots to do so, although this is a pinch better with zerk. </p>
+			<p>Generally while trying to bust a door or wall, you want to have your angle be as perpendicular to the door as possible. Try to hit it straight on.</p>
+			<p>Certain monsters, such as Cyberdemons and Cacodemons are also capable of busting geometry with their attacks, so be careful!</p>
+			<p>Try it out on doors of varying size, especially exit doors, so you can get a feel for it.</p>
+		</section>
+		<section class="anchor" id="penetration">
+			<h2>Penetration</h2>
+			<h5>by Sledge</h5>
+			<hr/>
+			<p>9mm and buckshot can do some extremely minor penetration through, say, a corner, or a "glass" window. </p>
+			<p>4mm will penetrate thin walls and soft targets with some reliability, and 7mm will very reliably punch through a significant amount of wall, or go straight through an enemy.</p>
+			<p>A Bronto bolt will punch clean through 2 man-sized targets and still explode on anything behind them.</p>
+			<p>This can be used to foil ambushes, if you hear something through a wall, or know that it's coming.</p>
+		</section>
+		<section class="anchor" id="boss-handling">
+			<h2>Boss Rifle Handling</h2>
+			<h5>by Caligari87</h5>
+			<hr/>
+			<p>As shooting is dictacted by combat situations, the main thing the player can control is chamber manipulation. The best way to keep the Boss clean as long as possible is by racking/manipulating the chamber as little as possible. Some suggestions:</p>
+			<p>Never manually load or unload a single round to or from the chamber. In addition to the dirt possibly introduced by open/closing the chamber, manual loading/unloading stacks an additional equal chance to either add or remove some dirt. The rules of probability suggest this is almost never a worthwhile choice. </p>
+			<p>On your last round, do not rack the chamber until a new mag is loaded. This saves one racking cycle worth of possibly-added dirt.</p>
+			<p>Do not clean a loaded chamber. This invokes the loading/unloading rule above. Wait until your last round is fired, rack out the empty *without closing the bolt*, clean as many times as needed (the "good to go" message is usually truthful), *then* close, and reload.</p>
+			<p>Avoid rapid fire. A warm chamber is subject to metal expansion, and will stick *worse* if (when) it locks up.  Letting the gun cool as much as possible after a shot will reduce frustrating lockups.</p>
+			<p>For the factory chamber tolerances, cleaning is recommended every 3-5 clips, perhaps more if needed. For the custom chamber much less cleaning is required, but some gentle TLC every 8-10 clips is a good idea unless it's clearly locking up a lot.</p>
+		</section>
+		<section class="anchor" id="boss-dirt">
+			<h2>Boss Rifle Dirtifying</h2>
+			<h5>by Caligari87</h5>
+			<hr/>
+			<p>The following is the current probabilities for the Boss Rifle to accumulate dirt (jamchance) due to various actions. The +/- amounts reflect the increase or decrease in dirt (jam chance percentage out of 100). In other words: +5 dirt is a +5% probability of jamming.</p>
+			<p>Some of these chance percentages are rounded up so may not add to 100% exactly. These numbers apply to the <i>tight chamber</i> setting. The <i>loose chamber</i> setting uses the same probabilities but reduces the dirt amounts considerably.</p>
+			<table class="data-table" id="dirt-table">
+				<caption>Dirtifying Numbers</caption>
+				<tr>
+					<th colspan="2">Firing</th>
+					<th colspan="2">Close Chamber</th>
+					<th colspan="2">Manually Load/Unload</th>
+					<th colspan="2">Cleaning</th>
+				</tr>
+				<tr>
+					<td>50%</td><td>No change</td>
+					<td>57%</td><td>No change</td>
+					<td>67%</td><td>No change</td>
+					<td>25%</td><td>-3</td>
+				</tr>
+				<tr>
+					<td>40%</td><td>+1</td>
+					<td>15%</td><td>+1</td>
+					<td>17%</td><td>+1</td>
+					<td>50%</td><td>-5</td>
+				</tr>
+				<tr>
+					<td>10%</td><td>-1</td>
+					<td>15%</td><td>+2</td>
+					<td>17%</td><td>-1</td>
+					<td>25%</td><td>-(8 to 16)</td>	
+				</tr>
+				<tr>
+					<td>&nbsp;</td><td>&nbsp;</td>
+					<td>15%</td><td>-1</td>
+					<td>&nbsp;</td><td>&nbsp;</td>
+					<td>&nbsp;</td><td>&nbsp;</td>
+				</tr>
+			</table>
 		</section>
 	</div>
 	<footer>Copyright (c) 2020 Accensus. All rights reserved.</footer>
