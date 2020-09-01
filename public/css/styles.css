@@ -38,7 +38,6 @@ footer
 section
 {
 	text-align: justify;
-	margin: 20px 0px;
 	color: #9ea290;
 	font-size: 16pt;
 }
@@ -287,12 +286,6 @@ header ul li a:active
 	margin: -30px 0 0;
 }
 
-.content .block
-{
-	background-color: #242523;
-	padding: 10px;
-}
-
 .content .about ol
 {
 	font-style: italic;
@@ -301,11 +294,19 @@ header ul li a:active
 	padding-left: 40px;
 }
 
-.content .mapblock
+.content .block
 {
 	background-color: #242523;
 	padding: 10px;
+	margin: 20px 0px;
+}
+
+.content .mapblock
+{
 	display: flex;
+	background-color: #242523;
+	padding: 10px;
+	margin: 20px 0px;
 }
 
 .content .mapblock .preview
@@ -320,7 +321,6 @@ header ul li a:active
 .content .mapblock .mapinfo
 {
 	display: initial;
-	border-left: 2px solid #9ea290;
 	padding-left: 10px;
 }
 
@@ -356,7 +356,8 @@ header ul li a:active
 {
 	font-family: "Consolas";
 	font-size: 80%;
-	padding: 1px 5px;
+	color: #bdc487;
+	padding: 3px 5px 0px 5px;
 	text-align: left;
 }
 
