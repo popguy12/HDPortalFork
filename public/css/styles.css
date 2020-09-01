@@ -46,6 +46,10 @@ section
 ul
 {
 	list-style-position: inside;
+}
+
+p + ul
+{
 	margin-bottom: 15px;
 }
 
