@@ -245,20 +245,17 @@ header ul li a:active
 	overflow: hidden;
 }
 
-.introduction
+#home-intro
 {
 	width: 60%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
-.introduction section h2
+#home-intro section h2
 {
 	text-align: center;
 }
 
-.introduction section h5
+#home-intro section h5
 {
 	text-align: center;
 }
