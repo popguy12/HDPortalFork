@@ -260,6 +260,19 @@ header ul li a:active
 	text-align: center;
 }
 
+#home-intro #links
+{
+	text-align: center;
+	margin: 10px auto;
+	margin-top: 10px;
+}
+
+#home-intro #links img
+{
+	margin: 0px 10px;
+	max-height: 100px;
+}
+
 /*
 	TIPS & TRICKS
 */
