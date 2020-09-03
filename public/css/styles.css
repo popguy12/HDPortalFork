@@ -400,43 +400,39 @@ header ul li a:active
 	max-height: 25px;
 }
 
-.content section .multiplayer
+.content section .multiplayer,
+.content section .requirement,
+.content section .description,
+.content section .recommended,
+.content section .missinginfo
 {
 	text-align: left;
-	color: #6cbe6a;
 	font-size: 16px;
 	letter-spacing: 1px;
+	margin: 5px 0px;
+}
+
+.content section .multiplayer
+{
+	color: #6cbe6a;
 }
 
 .content section .requirement
 {
-	text-align: left;
 	color: #beac6a;
-	font-size: 16px;
-	letter-spacing: 1px;
 }
 
 .content section .description
 {
-	text-align: left;
 	font-size: 90%;
-	font-style: italic;
-	margin: 10px 0px;
 }
 
 .content section .recommended
 {
-	text-align: left;
 	color: #6aa9be;
-	font-size: 16px;
-	letter-spacing: 1px;
 }
 
 .content section .missinginfo
 {
-	text-align: left;
 	color: #eb5252;
-	font-size: 16px;
-	letter-spacing: 1px;
-	margin: 5px 0px;
 }
