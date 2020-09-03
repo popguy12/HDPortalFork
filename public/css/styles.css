@@ -400,11 +400,19 @@ header ul li a:active
 	max-height: 25px;
 }
 
+.content section .description
+{
+	text-align: left;
+	font-size: 90%;
+	font-style: italic;
+	margin: 10px 0px;
+}
+
 .content section .multiplayer,
 .content section .requirement,
-.content section .description,
 .content section .recommended,
-.content section .missinginfo
+.content section .missinginfo,
+.content section .universal
 {
 	text-align: left;
 	font-size: 16px;
@@ -422,11 +430,6 @@ header ul li a:active
 	color: #beac6a;
 }
 
-.content section .description
-{
-	font-size: 90%;
-}
-
 .content section .recommended
 {
 	color: #6aa9be;
@@ -435,4 +438,9 @@ header ul li a:active
 .content section .missinginfo
 {
 	color: #eb5252;
+}
+
+.content section .universal
+{
+	color: #82d9a3;
 }
