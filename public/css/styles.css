@@ -327,48 +327,11 @@ header ul li a:active
 	padding-left: 30px;
 }
 
-.content .block, .content .mapblock
+.content .block
 {
 	background-color: #242523;
 	padding: 10px;
 	margin: 20px 0px;
-}
-
-.content .mapblock
-{
-	display: flex;
-}
-
-.content .mapblock .preview
-{
-	flex: 0 0 auto;
-	margin: auto 0px;
-	max-width: 200px;
-	max-height: 200px;
-	margin-right: 10px;
-}
-
-.content .mapblock .mapinfo
-{
-	display: initial;
-	padding-left: 10px;
-}
-
-.content .mapblock .mapinfo .recommended
-{
-	text-align: left;
-	color: #6aa9be;
-	font-size: 16px;
-	letter-spacing: 1px;
-}
-
-.content .mapblock .mapinfo .missinginfo
-{
-	text-align: left;
-	color: #eb5252;
-	font-size: 16px;
-	letter-spacing: 1px;
-	margin: 5px 0px;
 }
 
 /*
@@ -459,4 +422,21 @@ header ul li a:active
 	font-size: 90%;
 	font-style: italic;
 	margin: 10px 0px;
+}
+
+.content section .recommended
+{
+	text-align: left;
+	color: #6aa9be;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.content section .missinginfo
+{
+	text-align: left;
+	color: #eb5252;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin: 5px 0px;
 }
