@@ -412,7 +412,8 @@ header ul li a:active
 .content section .requirement,
 .content section .recommended,
 .content section .missinginfo,
-.content section .universal
+.content section .universal,
+.content section .dedicated
 {
 	text-align: left;
 	font-size: 16px;
@@ -443,4 +444,9 @@ header ul li a:active
 .content section .universal
 {
 	color: #82d9a3;
+}
+
+.content section .dedicated
+{
+	color: #6cbe6a;
 }
