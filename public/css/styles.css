@@ -53,10 +53,9 @@ p + ul
 	margin-bottom: 15px;
 }
 
-/* [Ace] Separate paragraphs but don't mess up the spacing outside the paragraph "block" */
 p
 {
-	margin-bottom: 15px;
+	margin: 15px 0px;
 }
 
 p a
@@ -102,6 +101,11 @@ h5
 	margin-bottom: 10px;
 }
 
+table
+{
+	border-collapse: collapse;
+}
+
 table caption
 {
 	font-weight: bold;
@@ -110,10 +114,15 @@ table caption
 
 table td
 {
-	padding: 2px;
+	padding: 5px;
 }
 
 table th
+{
+	font-size: 80%;
+}
+
+.small-text
 {
 	font-size: 80%;
 }
@@ -234,6 +243,8 @@ header ul li a:active
 	background-color: #94a989;
 }
 
+.sidebar .bulk-range
+
 /*
 	LANDING PAGE
 */
@@ -348,29 +359,60 @@ header ul li a:active
 	vertical-align: top;
 }
 
-.content .data-table
+.content .info-table
 {
 	margin: 10px auto;
 	line-height: 90%;
-	border: 2px solid #454a38;
+	border: 2px solid #4e5440;
 	background-color: #242523;
 }
 
-.content #dirt-table, .content #blur-table
+/* [Ace] A data table is usually an info table but it has a border between the cells. */
+.content .data-table
 {
 	text-align: center;
-	border-collapse: collapse;
 }
 
-.content #dirt-table td, .content #blur-table td
+.content .data-table td, .content .data-table th
 {
-	padding: 1px 10px;
-	border: 2px solid #454a38;
+	padding: 2px 5px;
+	border: 2px solid #4e5440;
 }
 
-.content #dirt-table tr td, .content #blur-table tr td
+.content .data-table tr td, .content .data-table tr th
 {
 	margin: 10px;
+}
+
+.content .loadout-table
+{
+	line-height: 100%;
+	margin: 10px 0px;
+	background-color: #30322a;
+}
+
+.content .loadout-table .configuration
+{
+	font-size: 80%;
+	background-color: #262924
+}
+
+.content .loadout-table .wpvalue, .content .loadout-table .itvalue
+{
+	max-width: 200px;
+	font-size: 80%;
+	background-color: #171816;
+}
+
+.content #item-table .itvalue
+{
+	text-align: left;
+	max-width: initial;
+}
+
+.content #item-table
+{
+	margin: 10px auto;
 }
 
 .content section .code
