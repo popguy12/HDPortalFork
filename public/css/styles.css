@@ -356,19 +356,19 @@ header ul li a:active
 	background-color: #242523;
 }
 
-.content #dirt-table
+.content #dirt-table, .content #blur-table
 {
 	text-align: center;
 	border-collapse: collapse;
 }
 
-.content #dirt-table td
+.content #dirt-table td, .content #blur-table td
 {
 	padding: 1px 10px;
 	border: 2px solid #454a38;
 }
 
-.content #dirt-table tr td
+.content #dirt-table tr td, .content #blur-table tr td
 {
 	margin: 10px;
 }
