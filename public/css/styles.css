@@ -162,7 +162,7 @@ header ul
 	flex-wrap: wrap-reverse;
 }
 
-header ul li a
+header ul li a, header ul .dropdown
 {
 	float: right;
 	text-align: center;
@@ -179,6 +179,16 @@ header ul li a:hover
 	border-bottom: 2px solid #c2d3c4;
 }
 
+header ul .dropdown:hover
+{
+	background-color: #65775f;
+}
+
+header ul .dropdown:hover
+{
+	cursor: default;
+}
+
 header ul li a:active
 {
 	padding: 4px 16px 4px 16px;
@@ -186,7 +196,7 @@ header ul li a:active
 	background-color: #94a989;
 }
 
-header ul .dropdown
+header ul .dropdown-link
 {
 	position: relative;
 }
@@ -198,7 +208,7 @@ header ul .dropdown-content
 	top: 100%;
 }
 
-header ul .dropdown:hover .dropdown-content
+header ul .dropdown:hover .dropdown-content, header ul .dropdown-link:hover .dropdown-content
 {
 	display: block;
 	background-color: #3a4030;
