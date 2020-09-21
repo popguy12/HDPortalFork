@@ -483,22 +483,19 @@ header ul .dropdown-content a:hover
 	margin: 10px 0px;
 }
 
-.content section .multiplayer,
+/* [Ace] Ordered by priority in descending order. */
 .content section .requirement,
 .content section .recommended,
+.content section .multiplayer,
+.content section .injector,
 .content section .missinginfo,
 .content section .universal,
-.content section .dedicated
+.content section .dedicated, /* [Ace] Made for HD. Used by maps*/
 {
 	text-align: left;
 	font-size: 16px;
 	letter-spacing: 1px;
 	margin: 2px 0px;
-}
-
-.content section .multiplayer
-{
-	color: #6cbe6a;
 }
 
 .content section .requirement
@@ -509,6 +506,16 @@ header ul .dropdown-content a:hover
 .content section .recommended
 {
 	color: #6aa9be;
+}
+
+.content section .multiplayer
+{
+	color: #6cbe6a;
+}
+
+.content section .injector
+{
+	color: #a2a5be;
 }
 
 .content section .missinginfo
