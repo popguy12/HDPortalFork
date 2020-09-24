@@ -79,7 +79,8 @@ p a:active
 
 h2
 {
-	padding-top: 20px;
+	margin-top: 10px;
+	margin-bottom: 2px;
 	font-family: "Armata";
 	font-size: 26px;
 	text-align: left;
@@ -98,7 +99,6 @@ h5
 	text-align: left;
 	color: #9ea290;
 	font-style: italic;
-	margin-bottom: 10px;
 }
 
 table
@@ -179,16 +179,6 @@ header ul li a:hover
 	border-bottom: 2px solid #c2d3c4;
 }
 
-header ul .dropdown:hover
-{
-	background-color: #65775f;
-}
-
-header ul .dropdown:hover
-{
-	cursor: default;
-}
-
 header ul li a:active
 {
 	padding: 4px 16px 4px 16px;
@@ -196,15 +186,22 @@ header ul li a:active
 	background-color: #94a989;
 }
 
-header ul .dropdown-link
+header ul .dropdown, header ul .dropdown-link
 {
 	position: relative;
+}
+
+header ul .dropdown:hover
+{
+	cursor: default;
+	background-color: #65775f;
 }
 
 header ul .dropdown-content
 {
 	display: none;
 	position: absolute;
+	left: 0%;
 	top: 100%;
 }
 
@@ -328,29 +325,6 @@ header ul .dropdown-content a:hover
 }
 
 /*
-	TIPS & TRICKS
-*/
-
-.tips
-{
-	width: 60%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.tips section h2
-{
-	text-align: center;
-	margin-top: 50px;
-}
-
-.tips section h3
-{
-	text-align: center;
-}
-
-/*
 	CONTENT STUFF
 */
 
@@ -371,6 +345,11 @@ header ul .dropdown-content a:hover
 	display: block;
 	height: 30px;
 	margin: -30px 0 0;
+}
+
+.content ul
+{
+	margin: 10px 0px;
 }
 
 .content .about ol, p ~ ul
@@ -447,13 +426,13 @@ header ul .dropdown-content a:hover
 	background-color: #171816;
 }
 
-.content #item-table .itvalue
+.content .item-table .itvalue
 {
 	text-align: left;
 	max-width: initial;
 }
 
-.content #item-table
+.content .item-table
 {
 	margin: 10px auto;
 }
