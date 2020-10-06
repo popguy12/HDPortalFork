@@ -476,7 +476,6 @@ header ul .dropdown-content a:hover
 .content section .requirement,
 .content section .recommended,
 .content section .multiplayer,
-.content section .injector,
 .content section .missinginfo,
 .content section .universal,
 .content section .dedicated, /* [Ace] Made for HD. Used by maps*/
@@ -500,11 +499,6 @@ header ul .dropdown-content a:hover
 .content section .multiplayer
 {
 	color: #6cbe6a;
-}
-
-.content section .injector
-{
-	color: #a2a5be;
 }
 
 .content section .missinginfo
