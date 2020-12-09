@@ -58,20 +58,20 @@ p
 	margin: 15px 0px;
 }
 
-p a
+a
 {
 	text-decoration: none;
 	color: #a9c68b;
 }
 
-p a:hover
+a:hover
 {
 	color: #c2d3c4;
 	background-color: #65775f;
 	border-bottom: 1px solid #c2d3c4;
 }
 
-p a:active
+a:active
 {
 	color: #c2d3c4;
 	background-color: #94a989;
@@ -358,6 +358,28 @@ header ul .dropdown-content a:hover
 	font-size: 90%;
 	margin-top: 5px;
 	padding-left: 30px;
+}
+
+.content .about ul
+{
+	list-style: none;
+	padding: 0px;
+}
+
+.content .about ul a
+{
+	font-size: 24px;
+	font-style: initial;
+}
+
+.content .about ul a:hover
+{
+	border: 0px;
+}
+
+.content .about ul a:active
+{
+	border: 0px;
 }
 
 .content .block
