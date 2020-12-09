@@ -58,20 +58,20 @@ p
 	margin: 15px 0px;
 }
 
-a
+p a, .content .about a
 {
 	text-decoration: none;
 	color: #a9c68b;
 }
 
-a:hover
+p a:hover, .content .about a:hover
 {
 	color: #c2d3c4;
 	background-color: #65775f;
 	border-bottom: 1px solid #c2d3c4;
 }
 
-a:active
+p a:active, .content .about a: active
 {
 	color: #c2d3c4;
 	background-color: #94a989;
