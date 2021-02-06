@@ -9,6 +9,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: #353b2c #474e3b;
 }
 
 /* [Ace] It's done like this so the footer works correctly. */
@@ -237,16 +239,38 @@ header ul .dropdown-content a:hover
 	z-index: 10;
 	position: fixed;
 	top: 20%;
+	bottom: 17%;
 	max-width: 14%;
 	background-color: #474e3b;
 	overflow: hidden;
+	overflow-y: scroll;
 }
 
+/* If it hits the top of the sidebar, it'll stick on top, becoming the title. */
 .sidebar h3
 {
-	float: left;
+	z-index: 20;
+	position: sticky;
+	top: 0;
+	width: 100%;
 	font-family: "Armata";
 	font-size: 14pt;
+	padding-top: 5px;
+	padding-left: 12px;
+	padding-right: 8px;
+	padding-bottom: 5px;
+	background-image: linear-gradient(#474e3b 85%, #00000000);
+	color: #909679;
+}
+
+/* 
+Should be used to group stuff.
+Can't have more than one in an <ul>, or else the padding-top will break.
+*/
+.sidebar h4
+{
+	font-family: "Armata";
+	font-size: 12pt;
 	padding-top: 5px;
 	padding-left: 12px;
 	padding-right: 8px;
@@ -257,9 +281,10 @@ header ul .dropdown-content a:hover
 .sidebar ul
 {
 	list-style: none;
+	overflow: hidden;
 }
 
-.sidebar ul li a
+.sidebar a
 {
 	float: left;
 	width: 100%;
@@ -270,7 +295,7 @@ header ul .dropdown-content a:hover
 	color: #a9c68b;
 }
 
-.sidebar ul li a:hover
+.sidebar a:hover
 {
 	padding: 2px 10px 2px 10px;
 	color: #c2d3c4;
@@ -278,11 +303,31 @@ header ul .dropdown-content a:hover
 	border-left: 2px solid #c2d3c4;
 }
 
-.sidebar ul li a:active
+.sidebar a:active
 {
 	padding: 2px 10px 2px 10px;
 	color: #c2d3c4;
 	background-color: #94a989;
+}
+
+/*
+	SCROLLBAR FOR CHROMIUM
+*/
+
+::-webkit-scrollbar
+{
+	width: 6px;
+}
+
+::-webkit-scrollbar-track
+{
+	background: #474e3b;
+	scrollbar-color: #353b2c #474e3b;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #353b2c;
 }
 
 /*
