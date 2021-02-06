@@ -239,7 +239,8 @@ header ul .dropdown-content a:hover
 	z-index: 10;
 	position: fixed;
 	top: 20%;
-	bottom: 17%;
+	bottom: max-content;
+	max-height: 63%;
 	max-width: 14%;
 	background-color: #474e3b;
 	overflow: hidden;
