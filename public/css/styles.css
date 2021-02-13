@@ -317,7 +317,7 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 
 ::-webkit-scrollbar
 {
-	width: 6px;
+	width: 10px;
 }
 
 ::-webkit-scrollbar-track
