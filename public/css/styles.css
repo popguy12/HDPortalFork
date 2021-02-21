@@ -435,6 +435,11 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 	margin: 20px 0px;
 }
 
+.content #bulletlib
+{
+	background-color: #3c351a;
+}
+
 /*
 	[Ace] Container tables are used to hold other tables. On their own they serve no purpose.
 	This is a galaxybrain hack(?) because I could not get multiple tables to align "inline" properly. Using Flex didn't work because it messed up the text when resized.
