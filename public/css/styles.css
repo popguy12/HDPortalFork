@@ -9,7 +9,6 @@
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	scrollbar-width: thin;
 	scrollbar-color: #353b2c #474e3b;
 }
 
@@ -324,7 +323,6 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 ::-webkit-scrollbar-track
 {
 	background: #474e3b;
-	scrollbar-color: #353b2c #474e3b;
 }
 
 ::-webkit-scrollbar-thumb
