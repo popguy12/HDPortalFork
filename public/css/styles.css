@@ -79,6 +79,13 @@ p a:active, .content .about a: active
 	background-color: #94a989;
 }
 
+h1
+{
+	font-size: 22pt;
+	font-variant: small-caps;
+	color: #a8af8e;
+}
+
 h2
 {
 	margin-top: 10px;
@@ -149,10 +156,7 @@ header
 header h1
 {
 	float: left;
-	font-size: 22pt;
-	font-variant: small-caps;
 	padding-left: 10px;
-	color: #a8af8e;
 }
 
 header ul
@@ -347,11 +351,6 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 }
 
 #home-intro section h2
-{
-	text-align: center;
-}
-
-#home-intro section h5
 {
 	text-align: center;
 }
