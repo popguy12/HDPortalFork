@@ -73,7 +73,7 @@ p a:hover, .content .about a:hover
 	border-bottom: 1px solid #c2d3c4;
 }
 
-p a:active, .content .about a: active
+p a:active, .content .about a:active
 {
 	color: #c2d3c4;
 	background-color: #94a989;
