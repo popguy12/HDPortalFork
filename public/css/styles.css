@@ -41,7 +41,7 @@ section
 {
 	text-align: justify;
 	color: #9ea290;
-	font-size: 16pt;
+	font-size: 22px;
 	margin-bottom: 30px;
 }
 
@@ -81,7 +81,7 @@ p a:active, .content .about a:active
 
 h1
 {
-	font-size: 22pt;
+	font-size: 30px;
 	font-variant: small-caps;
 	color: #a8af8e;
 }
@@ -149,7 +149,7 @@ header
 	width: 100%;
 	background-color: #474e3b;
 	opacity: 80%;
-	font-size: 18pt;
+	font-size: 24px;
 	overflow: visible;
 }
 
@@ -220,7 +220,7 @@ header ul .dropdown:hover .dropdown-content, header ul .dropdown-link:hover .dro
 
 header ul .dropdown-content a
 {
-	width: 100%;
+	width: 200px;
 	display: block;
 	text-decoration: none;
 	text-align: left;
@@ -259,7 +259,7 @@ header ul .dropdown-content a:hover
 	top: 0;
 	width: 100%;
 	font-family: "Armata";
-	font-size: 14pt;
+	font-size: 18px;
 	padding-top: 5px;
 	padding-left: 12px;
 	padding-right: 8px;
@@ -275,7 +275,7 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 .sidebar h4
 {
 	font-family: "Armata";
-	font-size: 12pt;
+	font-size: 16px;
 	padding-top: 5px;
 	padding-left: 12px;
 	padding-right: 8px;
@@ -293,7 +293,7 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 {
 	float: left;
 	width: 100%;
-	font-size: 14pt;
+	font-size: 18px;
 	text-align: left;
 	text-decoration: none;
 	padding: 2px 10px 2px 12px;
@@ -396,6 +396,13 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 	margin: 10px 0px;
 }
 
+.content .about .last-updated
+{
+	font-size: 24px;
+	font-style: italic;
+	color: #c6b890;
+}
+
 .content .about ol, p ~ ul
 {
 	font-style: italic;
@@ -429,13 +436,8 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 .content .block
 {
 	background-color: #242523;
-	padding: 10px;
+	padding: 5px 10px;
 	margin: 20px 0px;
-}
-
-.content #bulletlib
-{
-	background-color: #3c351a;
 }
 
 /*
@@ -543,13 +545,38 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 	margin: 10px 0px;
 }
 
+/* 
+	[Ace] Ordered by priority in descending order.
+	Used for the addons. These are section classes.
+*/
+
+.content .broken
+{
+	background-color: #3d2424;
+}
+
+.content .new
+{
+	background-color: #2c343a;
+}
+
+.content .updated
+{
+	background-color: #3b3926;
+}
+
+.content .pinned
+{
+	background-color: #2c372a;
+}
+
 /* [Ace] Ordered by priority in descending order. */
 .content section .requirement,
 .content section .recommended,
-.content section .multiplayer,
+.content section .nomultiplayer,
 .content section .missinginfo,
 .content section .universal,
-.content section .dedicated, /* [Ace] Made for HD. Used by maps*/
+.content section .dedicated /* [Ace] Made for HD. Used by maps */
 {
 	text-align: left;
 	font-size: 16px;
@@ -567,14 +594,14 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 	color: #6aa9be;
 }
 
-.content section .multiplayer
+.content section .nomultiplayer
 {
-	color: #6cbe6a;
+	color: #eb7552;
 }
 
 .content section .missinginfo
 {
-	color: #eb5252;
+	color: #c94f4f;
 }
 
 .content section .universal
