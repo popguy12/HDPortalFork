@@ -88,7 +88,7 @@ h1
 
 h2
 {
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 2px;
 	font-family: "Armata";
 	font-size: 26px;
@@ -96,7 +96,7 @@ h2
 	color: #a9c68b;
 }
 
-/* [Ace] above h2 should be used only inside blocks. */
+/* [Ace] Anything smaller than h2 should be used only inside blocks. */
 h3
 {
 	text-align: left;
