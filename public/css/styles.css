@@ -431,6 +431,7 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 	background-color: #242523;
 	padding: 5px 10px;
 	margin: 20px 0px;
+	scroll-margin-top: 50px;
 }
 
 .content .alt h3
