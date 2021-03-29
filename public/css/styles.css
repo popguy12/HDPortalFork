@@ -394,6 +394,7 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 	font-size: 24px;
 	font-style: italic;
 	color: #c6b890;
+	margin: 15px 0px;
 }
 
 .content .about ol, p ~ ul, h4 ~ p
