@@ -481,7 +481,7 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 .content .loadout-table
 {
 	line-height: 100%;
-	margin: 10px 0px 0px 0px;
+	margin: 5px 0px;
 	background-color: #30322a;
 }
 
