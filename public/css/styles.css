@@ -521,6 +521,15 @@ Can't have more than one in an <ul>, or else the padding-top will break.
 	margin-bottom: 3px;
 }
 
+/* [Caligari87] Support for HTML's built-in inline <code> elemant */
+code
+{
+	font-family: "Consolas";
+	padding: 0.1em;
+	font-size: 80%;
+	background-color: #171816;
+}
+
 .content section .bulk
 {
 	font-family: "Consolas";
